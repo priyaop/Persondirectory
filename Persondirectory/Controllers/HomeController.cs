@@ -89,7 +89,6 @@ namespace Persondirectory.Controllers
             {
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, Hex.Response.StatusCode.ToString());
             }
-            //test
         }
 
     }
