@@ -16,9 +16,14 @@ namespace Persondirectory
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{action}/{recid}",
+                defaults: new { recid = RouteParameter.Optional }                
             );
+            /*config.Routes.MapHttpRoute(
+               name: "ApiByName",
+               routeTemplate: "api/{controller}/{action}",
+               defaults:new { recname=RouteParameter.Optional}
+            );*/
         }
     }
 }
